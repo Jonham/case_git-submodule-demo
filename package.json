@@ -7,9 +7,10 @@
   "scripts": {
     "init-submodules": "git submodule update --init --remote --rebase --single-branch",
     "init-submodules-planB": "git submodule update --init --recursive",
+    "delete-submodules": "rm -rf case_gsub",
     "gsub": "git submodule update",
-    "plan": "npm run init-submodules && npm run gsub",
-    "dev": "npm run init-submodules-planB && npm run gsub"
+    "plan": "npm run delete-submodules && npm run init-submodules && npm run gsub",
+    "dev": "npm run delete-submodules && npm run init-submodules-planB && npm run gsub"
   },
   "license": "MIT"
 }
