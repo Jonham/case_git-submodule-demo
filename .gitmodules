@@ -1,3 +1,4 @@
 [submodule "case_gsub"]
 	path = case_gsub
 	url = https://github.com/Jonham/case_gsub.git
+	branch = main
