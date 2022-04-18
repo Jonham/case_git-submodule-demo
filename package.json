@@ -1,0 +1,15 @@
+{
+  "name": "case_git-submodule-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Jonham/case_git-submodule-demo.git",
+  "author": "Jonham.Chen <me@jonham.cn>",
+  "scripts": {
+    "init-submodules": "git submodule update --init --remote --rebase --single-branch",
+    "init-submodules-planB": "git submodule update --init --recursive",
+    "gsub": "git submodule update",
+    "plan": "npm run init-submodules && npm run gsub",
+    "dev": "npm run init-submodules-planB && npm run gsub"
+  },
+  "license": "MIT"
+}
